@@ -1,6 +1,8 @@
 module.exports = {
     parser: 'babel-eslint',
 
+    plugins: ['i18next'],
+
     extends: [
         './eslint.config.js',
         'plugin:react/recommended',
@@ -14,6 +16,10 @@ module.exports = {
     },
 
     rules: {
+        'i18next/no-literal-string': [
+            'warn',
+            { markupOnly: true, onlyAttribute: ['label'] },
+        ],
         'react/sort-prop-types': [
             'error',
             {
@@ -24,4 +30,13 @@ module.exports = {
         ],
         'react/no-unused-prop-types': 'error',
     },
+
+    overrides: [
+        {
+            files: ['*.test.js', '**/__tests__/*.js'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 }
