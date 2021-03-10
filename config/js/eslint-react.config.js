@@ -1,6 +1,8 @@
 module.exports = {
     parser: 'babel-eslint',
 
+    plugins: ['react-hooks'],
+
     extends: [
         './eslint.config.js',
         'plugin:react/recommended',
@@ -14,6 +16,8 @@ module.exports = {
     },
 
     rules: {
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
         'react/sort-prop-types': [
             'error',
             {
