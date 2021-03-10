@@ -8,7 +8,7 @@ module.exports = {
         'plugin:import/warnings',
     ],
 
-    plugins: ['prettier'],
+    plugins: ['prettier', 'compat'],
 
     env: {
         browser: true,
@@ -27,6 +27,7 @@ module.exports = {
     },
 
     rules: {
+        'compat/compat': 'warn',
         'max-params': [
             SEVERITY,
             {
