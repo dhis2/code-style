@@ -49,6 +49,6 @@
     },
     "devDependencies": {
         "@dhis2/cli-utils-docsite": "^3.0.0",
-        "tape": "^5.1.1"
+        "tape": "^5.2.2"
     }
 }
