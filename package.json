@@ -41,7 +41,7 @@
         "micromatch": "^4.0.4",
         "perfy": "^1.1.5",
         "prettier": "^2.2.1",
-        "semver": "^7.3.4",
+        "semver": "^7.3.5",
         "yargs": "^16.2.0"
     },
     "publishConfig": {
