@@ -1,12 +1,19 @@
 ls:
-    src/:
-        .dir: kebab-case
-
-    .js: kebab-case
-    .ts: kebab-case
-    .css: kebab-case
-    .d.ts: kebab-case
+    ./**/{src,cypress,lib}:
+        .css: kebab-case
+        .module.css: kebab-case
+        .feature: kebab-case
+        .js: kebab-case
+        .stories.js: kebab-case
+        .stories.e2e.js: kebab-case
+        .styles.js: kebab-case
+        .test.js: kebab-case
+        .jsx: kebab-case
+        .ts: kebab-case
+        .tsx: kebab-case
+        .d.ts: kebab-case
 
 ignore:
     - node_modules
     - .d2
+    - build
