@@ -50,5 +50,6 @@ module.exports = {
                 },
             },
         ],
+        'import/extensions': ['error', 'ignorePackages'],
     },
 }
